@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    <header>
+        <h1> Lista de tarefas</h1>
+    </header>
+    <main>
+        <p label for="tarefa">Tarefa: 
+            <input type="text" name="tarefa" id="task">
+        </p>
+        <button id="btn-adicionar" onclick="adicionarTarefa()">Adicionar tarefa</button>
+        <button id="btn-remover" onclick="removerTarefa()">Remover Tarefa</button>
+
+        <p id="lista"></p>
+    </main>
+    <footer></footer>
+
+    
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
