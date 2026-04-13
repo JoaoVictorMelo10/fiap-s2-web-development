@@ -1,8 +1,12 @@
-import React from 'react'
+import Menuitem from "./Menuitem"
 
-const Menu = () => {
+const Menu = ({itens}) => {
   return (
-    <div>Menu</div>
+    <div>
+        {itens.map((item) => (
+            <Menuitem key={item} {...item} />
+        ))}
+    </div>
   )
 }
 

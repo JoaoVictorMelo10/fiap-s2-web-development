@@ -1,8 +1,17 @@
-import React from 'react'
 
-const Menuitem = () => {
+
+const Menuitem = (titulo,preco,img,descricao) => {
   return (
-    <div>Menuitem</div>
+    <article>
+        <img src="img" alt={titulo} />
+        <div>
+            <header>
+                <h4>{titulo}</h4>
+                <p>R$ {preco.toFixed(2)}</p>
+            </header>
+            <p>{descricao}</p>
+        </div>
+    </article>
   )
 }
 
